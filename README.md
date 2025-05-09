@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# Bank Transaction Management System
 
-## Project info
+This is a fully functional **Bank Transaction Management System** built using **Object-Oriented Programming (OOP)** principles. The system simulates real-world banking operations, allowing users to perform transactions, manage multiple accounts, and explore OOP concepts interactively through a clean and modern UI.
 
-**URL**: https://lovable.dev/projects/3caa33f8-959b-4712-9a35-507917d79623
+## Features
 
-## How can I edit this code?
+- **Guest Access**: Sign-in and sign-up are optional. Users can access all features as a guest without the need to create an account.
+- **Account Management**: Create and manage multiple bank accounts (Savings and Current).
+- **Transactions**: Simulate deposit, withdrawal, and transfer between accounts.
+- **In-Memory Data**: All user data, accounts, and transactions are managed in-memory without a backend.
+- **OOP Concepts Explanation**: Each operation (like creating an account or performing a transaction) triggers a detailed explanation of the OOP concepts being used behind the scenes.
+- **OOP Visuals**: Dynamic, interactive class diagrams and concept explanations appear on the UI, helping users understand concepts like inheritance, encapsulation, polymorphism, and more.
+- **Class-Based Architecture**: The code follows an object-oriented design using classes, inheritance, encapsulation, and abstraction to manage users, accounts, and transactions.
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- **Frontend**: JavaScript or TypeScript (React)
+- **State Management**: React's `useState` or `useReducer`, Context API
+- **Styling**: Tailwind CSS or Chakra UI
+- **Data Management**: In-memory objects for users, accounts, and transactions
+- **OOP Design**: Encapsulation, Inheritance, Polymorphism, Abstraction
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3caa33f8-959b-4712-9a35-507917d79623) and start prompting.
+## Installation
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/bank-transaction-management-system.git
+   cd bank-transaction-management-system
+   ```
 
-**Use your preferred IDE**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Run the development server:
+   ```bash
+   npm start
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. Open your browser and go to http://localhost:3000 to view the app.
 
-Follow these steps:
+## Usage
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- **Sign In/Sign Up**: Optional. You can use the system as a guest without creating an account.
+- **Account Creation**: Create new accounts (Savings or Current) from the dashboard.
+- **Transactions**: Deposit, withdraw, or transfer money between accounts.
+- **OOP Concept Education**: After each action, OOP concepts such as inheritance, encapsulation, polymorphism, and abstraction are explained through tooltips and overlays.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## OOP Concepts Explained
 
-# Step 3: Install the necessary dependencies.
-npm i
+- **Class**: Represents blueprints for user accounts (e.g., SavingsAccount, CurrentAccount).
+- **Object**: Instances of classes, such as a specific user or an account.
+- **Inheritance**: SavingsAccount and CurrentAccount inherit from the Account class.
+- **Encapsulation**: Data such as account balance is encapsulated within each account object and can only be accessed or modified through specific methods.
+- **Polymorphism**: Different behaviors (e.g., transaction limits) are implemented in child classes (SavingsAccount, CurrentAccount) via method overriding.
+- **Abstraction**: The Account class provides a general template, while specific account types implement their unique details.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## Project Structure
+
+```
+/src
+  /components
+    AccountCard.js
+    Dashboard.js
+    TransactionList.js
+    TooltipOverlay.js
+  /classes
+    Account.js
+    SavingsAccount.js
+    CurrentAccount.js
+    User.js
+    Transaction.js
+  /contexts
+    UserContext.js
+    AccountContext.js
+  /utils
+    helpers.js
+  /assets
+    /images
+    /icons
+  App.js
+  index.js
+  styles.css
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Fork this repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Open a pull request.
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/3caa33f8-959b-4712-9a35-507917d79623) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
