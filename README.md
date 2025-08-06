@@ -32,8 +32,6 @@ Dive into the world of banking simulations and gain a deeper understanding of OO
 
 Experience the application live:
 [Live Demo Here](https://bank-management-system-m2y6.vercel.app/)
-*(Please replace `https://your-live-demo-url.com` with the actual URL of your deployed application.)*
-
 ## Features
 
 This system offers a comprehensive set of features designed for both practical use and educational insight into OOP:
